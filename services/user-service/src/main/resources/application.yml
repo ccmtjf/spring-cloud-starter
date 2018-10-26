@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        tags: version=1.0,author=hello
+        health-check-path: /info.json
+        health-check-interval: 5s
+        instance-id: ${spring.application.name}:${random.value}
+  application:
+    name: user-application

@@ -1,0 +1,14 @@
+target/
+logs/
+.settings/
+.idea/
+bin/
+.project
+.classpath
+generator.xml
+*.out
+*.iml
+*.class
+
+### OSX template
+*.DS_Store
